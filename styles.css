@@ -1,0 +1,113 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: .5rem;
+}
+
+h1 {
+  font-size: 3.375rem;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 11.391rem;
+  }
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 3.375rem;
+  }
+}
+
+
+h3 {
+  font-size: 2.25rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  display: block;
+}
+
+svg {
+  fill: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.splash {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.splash-header {
+  background: url('./ghost_metamorphosis.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-footer {
+  background: #000;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.container {
+  max-width: 80rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-link {
+  border: 2px solid #555;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 300ms ease;
+}
+
+.social-link:hover {
+  border-color: #fff;
+}
