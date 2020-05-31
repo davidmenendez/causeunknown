@@ -64,6 +64,12 @@ ul {
   list-style-type: none;
 }
 
+small {
+  font-size: .8rem;
+  margin: .5rem 0;
+  display: block;
+}
+
 .splash {
   min-height: 100vh;
   display: flex;
@@ -94,7 +100,9 @@ ul {
 
 .social {
   display: flex;
+  max-width: 12rem;
   justify-content: space-evenly;
+  margin: 0 auto;
 }
 
 .social-link {
