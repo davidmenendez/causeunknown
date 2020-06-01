@@ -24,10 +24,16 @@ h3 {
 }
 
 h1 {
-  font-size: 3.375rem;
+  font-size: 5.063rem;
 }
 
 @media (min-width: 576px) {
+  h1 {
+    font-size: 7.594rem;
+  }
+}
+
+@media (min-width: 768px) {
   h1 {
     font-size: 11.391rem;
   }
@@ -83,6 +89,24 @@ small {
   margin: 0 auto;
 }
 
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
 .splash {
   min-height: 100vh;
   display: flex;
@@ -97,6 +121,7 @@ small {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem 0;
 }
 
 .splash-footer {
@@ -128,4 +153,8 @@ small {
 .social-link:hover {
   border-color: #fff;
   text-decoration: none;
+}
+
+.soon {
+  margin-bottom: 0;
 }
