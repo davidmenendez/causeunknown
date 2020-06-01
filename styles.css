@@ -53,7 +53,13 @@ p {
 }
 
 a {
-  display: block;
+  display: inline-block;
+  color: #5e8780;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 svg {
@@ -101,7 +107,8 @@ small {
 
 .social {
   display: flex;
-  max-width: 12rem;
+  width: 100%;
+  max-width: 300px;
   justify-content: space-evenly;
   margin: 0 auto;
 }
@@ -115,8 +122,10 @@ small {
   justify-content: center;
   align-items: center;
   transition: border-color 300ms ease;
+  color: #fff;
 }
 
 .social-link:hover {
   border-color: #fff;
+  text-decoration: none;
 }
