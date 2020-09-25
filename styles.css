@@ -131,6 +131,16 @@ small {
   min-height: 100vh;
 }
 
+.splash-header h3 {
+  margin-bottom: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 600px;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
 .splash-footer {
   text-align: center;
   padding: 1rem 0;
@@ -165,10 +175,6 @@ small {
 .social-link:hover {
   background-color: #4D6E68;
   text-decoration: none;
-}
-
-.soon {
-  margin-bottom: 0;
 }
 
 .iframe-container {
@@ -208,4 +214,36 @@ main {
   .gear {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.cta-button {
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 300ms ease;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .cta-button {
+    margin: 0 auto;
+    max-width: 14rem;
+  }
+}
+
+.cta-button svg {
+  fill: #fff;
+  margin-left: .5rem;
+}
+
+.cta-button:hover {
+  text-decoration: none;
+  background: #4D6E68;
 }
