@@ -67,13 +67,14 @@ p {
 }
 
 a {
+  transition: color 300ms ease;
   display: inline-block;
-  color: #5e8780;
+  color: #0c93b9;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #e50000;
 }
 
 img {
@@ -120,7 +121,7 @@ small {
 }
 
 .splash-header {
-  background-image: url('./cause_unknown_ghost_metamorphosis_sm.jpg');
+  background-image: url('./elements_bg.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -136,7 +137,6 @@ small {
 
 @media (min-width: 576px) {
   .splash-header {
-    background-image: url('./cause_unknown_ghost_metamorphosis.jpg');
     background-attachment: fixed;
   }
 }
@@ -172,14 +172,15 @@ small {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 200ms ease;
+  transition: background-color 300ms ease;
   fill: #000;
-  background-color: #5e8780;
+  background-color: #0c93b9;
   color: #000;
 }
 
 .social-link:hover {
-  background-color: #4D6E68;
+  color: #000;
+  background-color: #e50000;
   text-decoration: none;
 }
 
@@ -260,6 +261,15 @@ main {
 }
 
 .cta-button:hover {
+  color: #fff;
   text-decoration: none;
-  background: #4D6E68;
+  color: inherit;
+}
+
+.cta-button--red:hover {
+  background: #e50000;
+}
+
+.cta-button--blue:hover {
+  background: #0c93b9;
 }
