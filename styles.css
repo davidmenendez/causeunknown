@@ -8,7 +8,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #fff;
   background: #000;
   margin: 0;
@@ -18,8 +18,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Amatic SC', cursive;
-  font-weight: 700;
+  font-weight: 300;
   line-height: 1.1;
   margin: 0 0 .5rem 0;
   text-align: center;
@@ -27,17 +26,18 @@ h3 {
 
 h1 {
   font-size: 5.063rem;
+  letter-spacing: normal;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   h1 {
     font-size: 7.594rem;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   h1 {
-    font-size: 11.391rem;
+    letter-spacing: 2rem;
   }
 }
 
@@ -45,21 +45,8 @@ h2 {
   font-size: 2.25rem;
 }
 
-@media (min-width: 576px) {
-  h2 {
-    font-size: 5.063rem;
-  }
-}
-
-
 h3 {
   font-size: 1.5rem;
-}
-
-@media (min-width: 576px) {
-  h3 {
-    font-size: 2.25rem;
-  }
 }
 
 p {
@@ -93,6 +80,10 @@ small {
   font-size: .8rem;
   margin: .5rem 0;
   display: block;
+}
+
+section {
+  margin-bottom: 1rem;
 }
 
 .container {
@@ -141,9 +132,10 @@ small {
   }
 }
 
-.splash-header h3 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.5rem;
+@media (min-width: 768px) {
+  .splash-header h2 {
+    font-size: 3.375rem;
+  }
 }
 
 .splash-footer {
@@ -203,10 +195,6 @@ small {
   height: 100%;
 }
 
-main {
-  padding: 1rem 0;
-}
-
 .email {
   margin-bottom: 1rem;
   word-break: break-all;
@@ -235,7 +223,7 @@ main {
 }
 
 .cta-button {
-  background: #000;
+  background: transparent;
   color: #fff;
   padding: 1rem;
   border: none;
