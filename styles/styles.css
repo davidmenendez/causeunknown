@@ -1,6 +1,6 @@
 *,
 *:before,
-*a:after {
+*:after {
   box-sizing: border-box;
 }
 
@@ -24,7 +24,8 @@ p {
   max-width: 960px;
   padding-left: 16px;
   padding-right: 16px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cover {
@@ -33,6 +34,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
 }
 
 .section {
