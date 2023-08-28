@@ -54,13 +54,13 @@ small {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 .social-link {
   display: block;
   height: 50px;
   width: 50px;
-  margin-left: 1rem;
 }
 
 .social-link svg {
