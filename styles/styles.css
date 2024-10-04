@@ -5,18 +5,39 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
+  font-style: normal;
+  margin: 0;
   line-height: 1.5;
   font-size: 1.5rem;
   background: #000;
   color: #fff;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.5rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
 p {
   margin: 0 0 1rem;
-  font-weight: 300;
 }
 
 .container {
@@ -47,6 +68,19 @@ p {
 .section {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.hero {
+  background: url("../images/cu3.webp") center center fixed;
+  background-size: cover;
+}
+
+.hero img {
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-weight: 200;
 }
 
 footer {
