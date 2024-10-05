@@ -1,116 +1,150 @@
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
+  margin: unset;
+  line-height: 1.5;
+  font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  margin: 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-  background: #000;
-  color: #fff;
+  background: #0d0d0d;
+  color: #f2f2f2;
+  font-size: 1rem;
+}
+
+section {
+  padding-top: 2rem;
+}
+
+img,
+picture,
+svg,
+canvas {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+a {
+  color: #6d74f2;
+  text-decoration: none;
+  transition: color 300ms ease;
+}
+
+a:hover {
+  color: #f2f2f2;
 }
 
 h1,
 h2,
 h3 {
-  font-weight: 300;
+  text-align: center;
+  font-weight: 100;
   line-height: 1.2;
   margin: 0 0 0.5rem 0;
 }
 
-h1 {
-  font-size: 3rem;
+h3 {
+  font-size: 1.5rem;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
 
-h3 {
-  font-size: 2rem;
+h1 {
+  font-size: 3.375rem;
 }
 
 p {
-  margin: 0 0 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+small {
+  font-weight: 600;
+  font-size: 80%;
+}
+
+footer {
+  padding: 2rem 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  width: 100%;
   max-width: 960px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 1rem;
+  margin: 0 auto;
 }
 
 .cover {
-  padding: 2rem 0;
+  background: url("../images/cu3.webp") center center scroll no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  min-height: 100vh;
+  padding: 2rem 0;
 }
 
 @media (min-width: 576px) {
   .cover {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0;
+    background-attachment: fixed;
   }
 }
 
-.section {
-  padding-top: 24px;
-  padding-bottom: 24px;
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
-.hero {
-  background: url("../images/cu3.webp") center center fixed;
-  background-size: cover;
+@media (min-width: 576px) {
+  .row {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
-.hero img {
-  margin-bottom: 3rem;
+.col {
+  display: flex;
+  flex: 1;
+  justify-content: center;
 }
 
-.hero h1 {
-  font-weight: 200;
+@media (min-width: 576px) {
+  .col {
+    justify-content: flex-start;
+  }
 }
 
-footer {
-  text-align: center;
-}
-
-small {
-  font-size: 0.8rem;
+.col-end {
+  justify-content: flex-end;
 }
 
 .social {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.social-link {
-  display: block;
-  height: 50px;
-  width: 50px;
-}
-
-.social-link svg {
-  transition: fill 300ms ease;
-  fill: #0460d9;
-}
-
-.social-link:hover svg {
-  fill: #bf0404;
+  flex: 1;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .yt {
@@ -119,7 +153,5 @@ small {
 }
 
 .logo {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
