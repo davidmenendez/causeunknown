@@ -115,15 +115,6 @@ ul {
   flex-wrap: nowrap;
 }
 
-@media (min-width: 576px) {
-  .row {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-}
-
 .col {
   display: flex;
   flex: 1;
@@ -131,6 +122,13 @@ ul {
 }
 
 @media (min-width: 576px) {
+  .row {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
   .col {
     justify-content: flex-start;
   }
@@ -143,8 +141,27 @@ ul {
 .social {
   display: flex;
   flex: 1;
-  justify-content: space-between;
   flex-wrap: wrap;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.social > li {
+  flex: 1 0 50%;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 576px) {
+  .social {
+    padding-top: 0;
+  }
+
+  .social > li {
+    flex: 1 0 auto;
+    margin-bottom: 0;
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
 }
 
 .yt {
